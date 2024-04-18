@@ -1,0 +1,29 @@
+.width30{
+    width:30%;
+}
+.float_right{
+    float:  right !important;
+}
+.custom_img{
+    width:150px;
+    height: 150px;
+}
+.card_title_center{
+    width: 100%;
+    text-align: center !important;
+}
+h3.card-title{
+    float:  right !important;
+    text-align: right !important;
+}
+
+.breadcrumbR{
+    float:  right !important;
+    text-align: right !important;
+}
+.adjust-header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
