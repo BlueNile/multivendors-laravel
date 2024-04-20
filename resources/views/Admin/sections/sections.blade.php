@@ -26,14 +26,12 @@
           <div class="col-12">
               <div class="card">
               <div class="card-header adjust-header">
-           
-                <h3 class="card-title">Sections</h3>
+           <div class="flex items-center justify-between">
+              <h3 class="card-title text-3xl bg-blue-900 text-white rounded-md p-1">Sections</h3>
               <a @if(empty('id') href="{{url('admin/sections/addEdit/')}}" 
-              @else href="{{url('admin/sections/addEdit/id')}}" 
-              @endif ><i class="fas fa-plus bg-green-800"></i>
-                  Add Section
-                </a>
-
+              @else href="{{url('admin/sections/addEdit/id')}}" @endif >
+              <i class="fas fa-plus bg-green-800"></i>Add Section </a>
+           </div>
               </div>
               <!-- /.card-header -->
               <div class="card-body">

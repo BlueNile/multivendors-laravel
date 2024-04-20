@@ -5,14 +5,17 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Section;
+use Session;
 class SectionController extends Controller
 {
     public function sections() {
+        Session::put("page","sections");
         $sections=Section::get();
         //dd($sections);
         return view("admin.sections.sections",compact('sections'));
      }
     public function addEditSection(Request $request,$id=""){
+        Session::put('page',"addeditsection");
             $data=$request->all();
              if($id==""){
                 $section=new Section();
