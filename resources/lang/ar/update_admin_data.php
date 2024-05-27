@@ -14,6 +14,7 @@ return [
 'admin_email_address'=>'البريد الالكترونى',
 'admin_email_address_holder'=>'ادخل البريد الالكترونى',
 'admin_phone'=>'تليفون الادمين',
+'admin_phone_holder'=>'ادخل رقم المحمول بالطريقة الصحيحة',
 'admin_address'=>'عنوان الادمين',
 'admin_password'=>'كلمةالمرور للادمين',
 'admin_image'=>' صورة الادمين',

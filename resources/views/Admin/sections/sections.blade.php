@@ -51,18 +51,18 @@
                     <td>{{$loop->iteration}}</td>
                     <td>{{$section->name}}</td>
                     <td> @if($section['status']==1)
-                      <i class="fas fa-toggle-on bg-blue-700" status="active"></i>
+                      <a class="updateSectionStatus" id="section-{{$section['id']}}" section_id="{{$section['id']}}" href="javascript:void(0)" data-section-status="active"><i class="fas fa-toggle-on" ></i></a>
                          @else
-                         <i class="fas fa-toggle-off" status="inactive"></i></a>
+                      <a class="updateSectionStatus" id="section-{{$section['id']}}" section_id="{{$section['id']}}" href="javascript:void(0)" data-section-status="inactive"><i class="fas fa-toggle-off"></i></a>
                          @endif
                     </td>
                     <td>
-                  <a style="color="#3effd3"" href="{{url('admin/sections/addEdit/'.$section->id)}}"><i class="fas fa-edit"></i></a>   |
-                  <a href="javascript:void(0)" name="Section Page" title="Delete Section" record="section-page" recordid={{$section['id']}}> <i class="fas fa-trash"></i></a> |
+                  <a style="color:#3effd3" href="{{url('admin/sections/addEdit/'.$section->id)}}"><i class="fas fa-edit"></i></a>   |
+                  <a href='javascript:void(0)' name="Section Page" title="Delete Section" record="section-page" recordid={{$section['id']}}><i class="fas fa-trash bg-red-700"></i></a> |
                     <i class="fas fa-eye"></i>   
                     </td> 
                     <td>{{date("F j,Y,g:i a",strtotime($section->created_at));}}</td></tr>
-@endforeach
+                    @endforeach
                   </tbody>
                 </table>
               </div>

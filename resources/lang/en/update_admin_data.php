@@ -14,6 +14,7 @@ return [
 'admin_email_address'=>'admin email address',
 'admin_email_address_holder'=>'enter email admin address',
 'admin_phone'=>'admin phone',
+'admin_phone_holder'=>'please select phone number as format',
 'admin_address'=>'admin address',
 'admin_password'=>'admin password',
 'admin_image'=>'admin picture',

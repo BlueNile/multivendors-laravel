@@ -9,13 +9,16 @@
         <!-- Tell the browser to be responsive to screen width -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         @vite('resources/css/app.css')
+        <!-- Jquery -->
         <script src="{{url('Admin/assets/plugins/jquery/jquery.min.js')}}"></script>
+        <script src="{{url('Admin/assets/plugins/jquery-ui/jquery-ui.min.js')}}"></script>
         <!-- Bootstrap 4 -->
         <script src="{{url('Admin/assets/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
         @if(App::getLocale()=='ar')
+        <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js"></script>
           <!-- Font Awesome -->
           <link rel="stylesheet" href="{{url('Admin/assets/fontawesome/css/all.min.css')}}" rel="stylesheet">
-          <!-- Ionicons -->
+          
           <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
           <!-- Tempusdominus Bbootstrap 4 -->
           <link rel="stylesheet" href="{{url('admin/assets/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')}}">
@@ -23,6 +26,7 @@
           <link rel="stylesheet" href="{{url('admin/assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
           <!-- JQVMap -->
           <link rel="stylesheet" href="{{url('admin/assets/plugins/jqvmap/jqvmap.min.css')}}">
+          
           <!-- Theme style -->
           <link rel="stylesheet" href="{{url('admin/assets/dist/css/adminlte.min.css')}}">
           <!-- overlayScrollbars -->
@@ -38,7 +42,7 @@
           <link rel="stylesheet" href="{{url('admin/assets/dist/css/custom.css')}}">
           <link rel="stylesheet" href="{{url('admin/assets/css/mycustomstyle.css')}}">
           @else
-          <script src="{{url('Admin/assets/plugins/jquery/jquery.min.js')}}"></script>
+          
           <!-- Bootstrap 4 -->
           <script src="{{url('Admin/assets/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
             <!-- Font Awesome -->
@@ -49,8 +53,9 @@
             <link rel="stylesheet" href="{{url('admin/assets/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')}}">
             <!-- iCheck -->
             <link rel="stylesheet" href="{{url('admin/assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css')}}">
-            <!-- JQVMap -->
+            <!-- JQVMap  -->
             <link rel="stylesheet" href="{{url('admin/assets/plugins/jqvmap/jqvmap.min.css')}}">
+           
             <!-- Theme style -->
             <link rel="stylesheet" href="{{url('admin/assets/dist/css/adminlte.min.css')}}">
             <!-- overlayScrollbars -->
@@ -96,7 +101,7 @@
   $.widget.bridge('uibutton', $.ui.button)
 </script>
 <!-- Bootstrap 4 rtl -->
-<!-- <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js"></script> -->
+<script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js"></script>
 <script src="{{url('admin/assets/css/bootstrap-4.0.0-dist/js/bootstrap.min.js')}}"></script>
 <!-- Bootstrap 4 -->
 <script src="{{url('admin/assets/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
@@ -109,7 +114,7 @@
 <!-- Sparkline -->
 <script src="{{url('admin/assets/plugins/sparklines/sparkline.js')}}"></script>
 <!-- JQVMap -->
-<script src="{{url('admin/assets/plugins/jqvmap/jquery.vmap.min.js')}}"></script>
+<script src="{{url('admin/assets/plugins//jqvmap/jquery.vmap.min.js')}}"></script>
 <script src="{{url('admin/assets/plugins/jqvmap/maps/jquery.vmap.world.js')}}"></script>
 <!-- jQuery Knob Chart -->
 <script src="{{url('admin/assets/plugins/jquery-knob/jquery.knob.min.js')}}"></script>
@@ -125,11 +130,14 @@
 <!-- AdminLTE App -->
 <script src="{{url('admin/assets/dist/js/adminlte.js')}}"></script>
 <script src="{{url('admin/assets/dist/js/adminlte.min.js')}}"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="{{url('admin/assets/dist/js/pages/dashboard.js')}}"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) 
+<script src="{{url('admin/assets/dist/js/pages/dashboard.js')}}"></script>-->
 <!-- AdminLTE for demo purposes -->
 <script src="{{url('admin/assets/dist/js/demo.js')}}"></script>
 <script src="{{url('admin/assets/dist/js/custom.js')}}"></script>
 <script defer src="{{url('admin/assets/fontawesome/js/all.js')}}"></script>
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
 </body>
 </html>

@@ -38,12 +38,12 @@ class SectionController extends Controller
     function updateSectionStatus(Request$request) {
         if($request->ajax()){
             $data=$request->all();
-            if($data['status']="active"){
-                $status=1;
-            }else{
+            if($data['status']=='active'){
                 $status=0;
+            }else{
+                $status=1;
             }
-            Section::where("id",$data['section_id'])->update(['status'=>$status]);
+            Section::where('id',$data['section_id'])->update(['status'=>$status]);
              return response()->json(['status'=>$status,'section_id'=>$data['section_id']]);
         }
         

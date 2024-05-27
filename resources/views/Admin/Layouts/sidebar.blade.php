@@ -43,8 +43,7 @@
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="fa-solid fa-sliders"></i>
-              <p>{{trans('sidebar.settings')}} <i class="fas fa-angle-left right"></i>
-              </p>
+              <p>{{trans('sidebar.settings')}} <i class="fas fa-angle-left right"></i></p>
             </a>
             <ul class="nav nav-treeview">
               
