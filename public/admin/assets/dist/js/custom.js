@@ -31,8 +31,8 @@ $(document).ready(function () {
     $(document).on("click",".updateSectionStatus", function () {
         var status = $(this).data("section-status");
         var section_id = $(this).attr("section_id");
-        alert(section_id);
-        alert(status);
+        console.log(section_id);
+        console.log(status);
         $.ajax({
             type: "POST",
             url: "/admin/sections/update-section",
@@ -41,12 +41,13 @@ $(document).ready(function () {
             success: function (resp) {
                 if (resp["status"] == 0)
                     $("#section-" + section_id).html(
-                        "<i class='fas fa-toggle-off' status='active'></i>"
+                        "<i class='fas fa-toggle-off'></i>"
                     );
                 else 
                     $("#section-" + section_id).html(
-                        "<i class='fas fa-toggle-on' status='inactive'></i>"
+                        "<i class='fas fa-toggle-on'></i>"
                     );
+                    location.reload();
             },
             error: function () {
                 alert("error");

@@ -47,7 +47,7 @@ Route::group(
            // Route::get('add-new-admin',[AdminController::class,'addNewAdmin'])->name('admin.add-new-admin');
            // Route::post('add-new-admin',[AdminController::class,'addNewAdmin'])->name('admin.add-new-admin');
             //Route::match(['get','post'],'add-new-admin',[AdminController::class,'addNewAdmin']);
-            Route::post('sections/update-section',[SectionController::class,'updateSectionStatus']);
+            Route::post('sections/update-section',[SectionController::class,'updateSectionStatus'])->name('sections.update-status');
             });
             });
         

@@ -41,6 +41,7 @@
                     <th>id</th>
                     <th>name</th>
                     <th>status</th>
+                    <th>status1</th>
                     <th>Created_at</th>
                     <th>actions</th>
                   </tr>
@@ -53,7 +54,7 @@
                     <td> @if($section['status']==1)
                       <a class="updateSectionStatus" id="section-{{$section['id']}}" section_id="{{$section['id']}}" href="javascript:void(0)" data-section-status="active"><i class="fas fa-toggle-on" ></i></a>
                          @else
-                      <a class="updateSectionStatus" id="section-{{$section['id']}}" section_id="{{$section['id']}}" href="javascript:void(0)" data-section-status="inactive"><i class="fas fa-toggle-off"></i></a>
+                      <a class="updateSectionStatus" id="section-{{$section['id']}}" section_id="{{$section['id']}}" href="javascript:void(0)" data-section-status="inactive"><i class="fas fa-toggle-off" ></i></a>
                          @endif
                     </td>
                     <td>
