@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\Admin\SectionController;
+use App\Http\Controllers\Admin\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,6 +49,10 @@ Route::group(
            // Route::post('add-new-admin',[AdminController::class,'addNewAdmin'])->name('admin.add-new-admin');
             //Route::match(['get','post'],'add-new-admin',[AdminController::class,'addNewAdmin']);
             Route::post('sections/update-section',[SectionController::class,'updateSectionStatus'])->name('sections.update-status');
+            //products
+            Route::get('products',[ProductController::class,'products']);
+            Route::get('/addproduct', [ProductController::class, 'create'])->name('products.create');
+            Route::post('/addproduct', [ProductController::class, 'store'])->name('products.store');
             });
             });
         

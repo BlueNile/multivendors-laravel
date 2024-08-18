@@ -68,12 +68,18 @@
               </p>
             </a>
             
-            <ul @if(Session::get('page')=="sections"||Session::get('page')=="addeditsection") class="nav nav-treeview" @else class="nav nav-treeview" @endif>
+            <ul @if(Session::get('page')=="sections"||Session::get('page')=="products"||Session::get('page')=="addeditsection") class="nav nav-treeview" @else class="nav nav-treeview" @endif>
               
                 <li class="nav-item">
                 <a href="{{url('admin/sections')}}"  @if(Session::get('page')=="sections"||Session::get('page')=="addeditsection") class="nav-link active" @else class="nav-link" @endif>
                   <i class="fa-solid fa-puzzle-piece"></i>
                   <p> {{trans('sidebar.main_sections')}}</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url('admin/products')}}"  @if(Session::get('page')=="products") class="nav-link active" @else class="nav-link" @endif>
+                  <i class="fa-solid fa-puzzle-piece"></i>
+                  <p> {{trans('products.products_name')}}</p>
                 </a>
               </li>
                  </ul>

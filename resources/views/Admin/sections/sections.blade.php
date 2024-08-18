@@ -41,9 +41,8 @@
                     <th>id</th>
                     <th>name</th>
                     <th>status</th>
-                    <th>status1</th>
-                    <th>Created_at</th>
                     <th>actions</th>
+                    <th>Created_at</th>
                   </tr>
                   </thead>
                   <tbody>

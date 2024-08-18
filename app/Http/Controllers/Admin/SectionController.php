@@ -30,6 +30,7 @@ class SectionController extends Controller
                     $section->name=$data['section_name'];
                     $section->status=1;
                     $section->save();
+                    return redirect('admin/sections');
                 }
                 
            return view('admin.sections.addEditSection',compact('title','section','success_message'));
